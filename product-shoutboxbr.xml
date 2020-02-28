@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<product productid="ShoutBoxBR" active="1">
+	<title>ShoutBoxBR - adrianobr</title>
+	<description>ShoutBoxBR 1.0 - Para vBulletin® v3.7.x com vBa CMPS 3.0.x</description>
+	<version>1.0</version>
+	<url><![CDATA[http://www.adrianobr.com]]></url>
+	<dependencies>
+		<dependency dependencytype="vbulletin" minversion="3.7.0" maxversion="3.8.99" />
+	</dependencies>
+	<codes>
+		<code version="1.0">
+					<installcode><![CDATA[$db->hide_errors();
+$db->query_write("
+CREATE TABLE IF NOT EXISTS" . TABLE_PREFIX . "`shoutbox` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `userid` int(11) NOT NULL,
+  `username` text NOT NULL,
+  `message` text NOT NULL,
+  `date` varchar(45) NOT NULL,
+  `time` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM ;
+");
+$db->show_errors();]]></installcode>
+			<uninstallcode><![CDATA[$db->hide_errors();
+$db->query_write("DROP TABLE `". TABLE_PREFIX ."shoutbox`;");
+$db->show_errors();]]></uninstallcode>
+		</code>
+			</codes>
+	<templates>
+		<template name="adv_portal_shoutboxbr" templatetype="template" date="1237138785" username="adrianobr" version=""><![CDATA[<tr><td style="padding:0px;">
+<iframe name="shoutboxbr" src="shoutboxbr.php" marginwidth="0" marginheight="0" hspace="0" vspace="0" scrolling="no" width="185" frameborder="0" height="445"></iframe></td>
+</tr>]]></template>
+		  </templates>
+</product>
+
+
