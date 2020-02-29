@@ -1,34 +1,35 @@
 <?php
-/*======================================================================*\
-|| #################################################################### ||
-|| # ShoutBoxBR 1.0
-|| # ---------------------------------------------------------------- # ||
-|| # Copyright �2009 adrianobr. Todos os Diretos s�o reservados.        ||
-|| # � proibido a copia ou distribui��o sem autoriza��o do autor.     # ||
-|| # ------------------ ShoutBoxBR N�O � GRATUITO  ------------------ # ||
-|| # Site: http://www.adrianobr.com | Email: webmaster@adrianobr.com  # ||
-|| #################################################################### ||
-\*======================================================================*/
+/*===============================================================================*\
+|| ############################################################################# ||
+|| # ShoutBoxBR 1.0                                                              ||
+|| # ------------------------------------------------------------------------- # ||
+|| # Copyright @2009 adriano. All rights are reserved.                         # ||
+|| # Copying or distribution without the author's authorization is prohibited. # ||
+|| # -------------------- ShoutBoxBR is open source -------------------------- # ||
+|| # Site: http://www.adrianobr.com | Email: webmaster@adrianobr.com           # ||
+|| ############################################################################# ||
+\*===============================================================================*/
+
 
 
 // ###################### VBULLETIN INTEGRATION #########################
-// N�o edite esta linha, nem pense em mexer...
+// Don't edit this line, don't even think about moving it...
 
 require_once('./global.php');  
 
-// ##################### Customiza��o do SHOUTBOX ########################
-// Voc� pode editar as seguintes vari�veis
+// ##################### SHOUTBOX Customization ########################
+// You can edit the following variables
 
-// O nome do seu Shoutbox, deve ser adicionado entre as aspas
+// The name of your Shoutbox, must be added between the quotes
 $shoutboxname = ".:: ShoutBoxBR ::.";
 
-// N�mero de menssagens para ser exibido no Shoutbox (numero inteiro)
+// Number of messages to be displayed on the Shoutbox ( whole number )
 $maxshouts = 30;
 
-// n�mero de recados que pode ser armazenado no banco de dados ( Numero inteiro)
-$maxstore = 100;
+// number of messages that can be stored in the database ( whole number )
+$maxstore = 2000;
 
-// Visitantes podem escrever no Shoutbox? (true (SIM) or false (N�O))
-$guestshouts = true;
+// Can visitors write on Shoutbox? (true (YES) or false (NO))
+$guestshouts = false;
 
 ?>

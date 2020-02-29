@@ -6,7 +6,7 @@
 	<version>1.0</version>
 	<url><![CDATA[http://www.adrianobr.com]]></url>
 	<dependencies>
-		<dependency dependencytype="vbulletin" minversion="3.7.0" maxversion="3.8.99" />
+		<dependency dependencytype="vbulletin" minversion="3.7.0" maxversion="3.9.99" />
 	</dependencies>
 	<codes>
 		<code version="1.0">
