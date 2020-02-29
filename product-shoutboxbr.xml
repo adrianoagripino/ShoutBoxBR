@@ -2,7 +2,7 @@
 
 <product productid="ShoutBoxBR" active="1">
 	<title>ShoutBoxBR - adrianobr</title>
-	<description>ShoutBoxBR 1.0 - Para vBulletin® v3.7.x com vBa CMPS 3.0.x</description>
+	<description>ShoutBoxBR 1.0 - For vBulletin v3.7.x with vBa CMPS 3.0.x</description>
 	<version>1.0</version>
 	<url><![CDATA[http://www.adrianobr.com]]></url>
 	<dependencies>
